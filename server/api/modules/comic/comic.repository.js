@@ -82,7 +82,7 @@ const count = async function (query) {
 }
 
 const findById = async function(id){
-    return await ComicModel.findById(id).populate("chapters");
+    return await ComicModel.findById(id);
 }
 
 const create = async function(data){
