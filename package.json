@@ -1,18 +1,18 @@
 {
-    "name": "server",
-    "version": "1.0.0",
-    "main": "app.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node server/app.js",
-      "prestart": "npm install"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "cors": "^2.8.5",
-      "express": "^4.17.1",
-      "mongoose": "^5.8.11"
-    },
-    "description": ""
-  }
+  "name": "server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/app.js",
+    "prestart": "npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11"
+  },
+  "description": ""
+}

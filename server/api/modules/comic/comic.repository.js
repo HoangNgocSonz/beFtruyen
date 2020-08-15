@@ -13,8 +13,9 @@ const ComicSchema = mongoose.Schema({
         }
     ],
     chapters:[{
-        type: mongoose.Schema.Types.ObjectId,
-        ref:"Chapter"
+        idForDetail:String,
+        chapIndex:String,
+        name:String
     }],
     comments:[{
         user:String,
@@ -92,7 +93,8 @@ const create = async function(data){
 
 const update = async function(id,data){
     if(data.chapters){
-        return await ComicModel.findByIdAndUpdate(id,{$addToSet:data},{new:true});
+        // return await ComicModel.findByIdAndUpdate(id,{$addToSet:data},{new:true});
+        return await ComicModel.findByIdAndUpdate(id,{$set:data},{new:true});
     }else if(!data.chapters){
         return await ComicModel.findByIdAndUpdate(id,{$set:data},{new:true});
     }
