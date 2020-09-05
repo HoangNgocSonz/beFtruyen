@@ -13,7 +13,8 @@ const ChapterSchema = mongoose.Schema({
     date:Date,
     view:Number,
     previousChapter:String,
-    nextChapter:String
+    nextChapter:String,
+    view:Number
 });
 
 const ChapterModel = mongoose.model('Chapter2',ChapterSchema);
