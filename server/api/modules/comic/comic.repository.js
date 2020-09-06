@@ -16,7 +16,7 @@ const ComicSchema = mongoose.Schema({
         idForDetail:String,
         chapIndex:String,
         name:String,
-        date:date
+        date:Date
     }],
     comments:[{
         user:String,
